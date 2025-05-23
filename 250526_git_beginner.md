@@ -13,15 +13,14 @@
 最初はこれを覚えておけば問題ないです．
 
 # 目次
-1. [🛠 Gitのインストール](#anchor1)
-1. [⚙️ Git 初期セットアップ](#anchor2)
-1. [🔰 基本操作](#anchor3)
-1. [🧑‍💻 複数端末での開発](#anchor4)
-1. [🙈 .gitignoreの作成と適用](#anchor5)
-1. [🔄 コミット履歴の確認・取り消し](#anchor6)
-1. [✅ まとめ](#anchor7)
+1. 🛠 Gitのインストール
+1. ⚙️ Git 初期セットアップ
+1. 🔰 基本操作
+1. 🧑‍💻 複数端末での開発
+1. 🙈 .gitignoreの作成と適用
+1. 🔄 コミット履歴の確認・取り消し
+1. ✅ まとめ
 
-<a id="anchor1"></a>
 #  1. 🛠 Gitのインストール
 
 ## 🍎 Mac
@@ -53,7 +52,6 @@ sudo apt install git -y
 git --version
 ```
 
-<a id="anchor2"></a>
 # 2. ⚙️ Git 初期セットアップ
 
 ## ユーザー名・メールの設定
@@ -86,8 +84,6 @@ ssh -T git@github.com
 ```
 `Hi ユーザー名! You've successfully authenticated...` のような出力があれば成功です（標準エラーに出ることもありますが正常です）．
 
-
-<a id="anchor3"></a>
 # 3. 🔰 基本操作
 
 ## リポジトリの初期化
@@ -147,7 +143,6 @@ git commit -m "通信機能の実装"
 git push
 ```
 
-<a id="anchor4"></a>
 # 4. 🧑‍💻 複数端末での開発
 
 ## 自分のリポジトリをclone（別端末用）
@@ -164,7 +159,6 @@ git clone https://github.com/hiroki1389/testRepository.git
 git pull
 ```
 
-<a id="anchor5"></a>
 # 5. 🙈 .gitignoreの作成と適用
 Gitにあげたくないファイルを".gitignore"に記述し，プロジェクトのルートに置くことでGitの管理対象外に設定できる．  
 参考テンプレート：[GitHub gitignore リポジトリ](https://github.com/github/gitignore)
@@ -184,7 +178,6 @@ git commit -m "Apply .gitignore and untrack ignored files"
 
 > ⚠️ 注意：この操作はファイルを Git の管理から外すだけであり，**これまでに push された履歴からは削除されません**．完全な削除方法は応用編で説明します．
 
-<a id="anchor6"></a>
 # 6. 🔄 コミット履歴の確認・取り消し
 
 履歴を確認：
@@ -212,7 +205,6 @@ git reset --hard <コミットID>
 git push origin main --force
 ```
 
-<a id="anchor7"></a>
 # 7. ✅ まとめ
 
 これだけ覚えれば，Gitの基本操作がひと通りこなせます．  
