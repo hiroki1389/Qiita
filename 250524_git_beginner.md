@@ -159,13 +159,25 @@ git push
 
 # 4. 🧑‍💻 複数端末での開発
 
-## 自分のリポジトリをclone（別端末用）
+## リポジトリをclone
+- HTTPSでクローン
 ```bash
 git clone https://github.com/{ユーザー名}/{リポジトリ名}.git
 ```
+
+- SSHでクローン
+```bash
+git clone git@github.com:{ユーザー名}/{リポジトリ名}.git
+```
+
+- GitHub CLI（gh）でクローン
+```bash
+gh repo clone {ユーザー名}/{リポジトリ名}
+```
+
 ### 例
 ```bash
-git clone https://github.com/hiroki1389/testRepository.git
+gh repo clone hiroki1389/testRepository
 ```
 
 ## 他端末の変更を取り込む
