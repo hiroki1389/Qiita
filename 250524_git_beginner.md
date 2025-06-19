@@ -63,13 +63,27 @@ git config --global user.email "あなたのメールアドレス"
 ## SSHキーの生成・GitHub登録
 
 ### 🔧 ローカル環境用（GitHub CLIを利用）
+
+#### インストール
 ```bash
+# macOS (Homebrew)
 brew install gh
+# Ubuntu
+sudo apt install gh -y
+```
+
+#### 動作確認
+```bash
+gh --version
+```
+
+#### 認証
+```bash
 gh auth login
 ```
 選択肢：GitHub.com → SSH → Y → Webブラウザ → 指示に従う．
 
-### 🐳 Docker環境用（手動設定）
+### 🔧 手動設定（🐳 Docker環境用）
 ```bash
 ssh-keygen -t ed25519 -C "あなたのメールアドレス"
 eval "$(ssh-agent -s)"
